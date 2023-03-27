@@ -1,0 +1,69 @@
+<div id="contacts-id" class="con_contacts">
+    <div id="contacts-list-container" class="con_contactsListContainer">
+        <button class="con_ContactInformationAddButtonMobile hoverEffect hoverButton" onclick="newContact()">
+            <span style="font-size: 21px; color: white;">New contact</span>
+            <img src="./img/add_contact.png">
+        </button>
+        <div id="new-popup" class="con_editOrNewPopup d-none">
+            <form id="new-popup-form" class="con_NewForm d-none">
+                <input id="con-new-name" class="con_editInputfield con_editInputfieldName" placeholder="FirstName LastName" type="text" required>
+                <input id="con-new-phone" class="con_editInputfield con_editInputfieldPhone" placeholder="Phone number" type="number" required>
+                <input id="con-new-mail" class="con_editInputfield con_editInputfieldMail" placeholder="E-Mail" type="email" required>
+                <input class="con_editInputfield" value="Submit" type="button" onclick="addNewContact();">
+                <input class="con_editInputfield" value="Cancel" type="button" onclick="cancelAddNewContact();">
+            </form>
+        </div>
+        <div id="contact-list" class="con_contactList"></div>
+    </div>
+    <div id="contact-information" class="con_contactInformation d-none">
+        <div id="contact-information-header" class="con_contactInformationHeader">
+            <span class="con_contactInformationStartHeader">Contacts</span>
+            <div class="con_vector5"></div>
+            <span class="con_contactInformationStartHeaderTwo">Better with a team</span>
+        </div>
+        <div id="contacts-details" class="con_contactsDetails d-none">
+            <div id="edit-or-new-popup" class="con_editOrNewPopup d-none">
+                <div id="edit-overlay-sidebar" class="con_editOverlaySideBar">
+                    <img class="joinLogoEditOverlay" src="img/logo_white.png">
+                    <span class="sideBarText">Edit contact</span>
+                </div>
+                <div class="rightSide">
+                    <!-- <div id="edit-label" class="editLabel"></div> -->
+                    <div id="edit-label" class="editLabel"></div>
+                    <form id="edit-form" class="con_editForm d-none">
+                        <img class="imageEditCancel" src="img/cancel.png" onclick="cancelEditContact()">
+                        <img class="imageEditCancelMobile" src="img/cross_mobile.png" onclick="cancelEditContact()">
+                        <input id="con-edit-name" name="contactName" class="con_editInputField con_editInputfieldName" placeholder="Name" type="text" required>
+                        <input id="con-edit-phone" name="phoneNumber" class="con_editInputField con_editInputfieldPhone" placeholder="Phone number" type="text" required>
+                        <input id="con-edit-mail" name="emailAddress" class="con_editInputField con_editInputfieldMail" placeholder="E-Mail" type="email" required>
+                        <!-- <button class="saveEditButton" onclick="submitEdit(contactToEdit);">Save</button> -->
+                        <input class="saveEditButton" value="Save" type="button" onclick="submitEdit(contactToEdit);">
+                    </form>
+                </div>
+                
+            </div>
+            <div id="label-big-and-name" class="con_labelBigAndName d-none"></div>
+            <div id="edit-container" class="con_editContainer d-none"></div>
+            <div id="mail-and-phone-container" class="con_mailAndPhoneContainer d-none"></div>
+            <button class="con_CloseContactInformation con_ContactInformationAddButton hoverEffect hoverButton" onclick="closeContactInformationContainer()"> 
+                <span style="font-size: 21px; color:white;">Close Contact</span>
+            </button>
+        </div>
+        <div class="con_contactInformationName"></div>
+        <div class="con_contactInformationDetails"></div>
+        <!-- <div class="con_buttonContainer">
+            <button class="con_ContactInformationAddButton hoverEffect hoverButton" onclick="newContact()">
+                <span style="font-size: 21px; color: white;">New contact</span>
+                <img src="./img/add_contact.png">
+            </button>
+        </div> -->
+    </div>
+    <div id="con-button-container" class="con_buttonContainer">
+        <button class="con_ContactInformationAddButton hoverEffect hoverButton" onclick="newContact()">
+            <span style="font-size: 21px; color: white;">New contact</span>
+            <img src="./img/add_contact.png">
+        </button>
+    </div>
+</div>
+
+

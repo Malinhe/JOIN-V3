@@ -1,0 +1,789 @@
+.d-none {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.con_invisible {
+  visibility: hidden;
+}
+
+.hoverEffect span:hover {
+  cursor: pointer;
+}
+
+.hoverEffect {
+  cursor: pointer;
+}
+
+.hoverButton:hover {
+  filter: brightness(1.3);
+}
+
+.con_contacts {
+  top: 100px;
+  left: 232px;
+  position: relative;
+  /* height: 80vh; */
+  width: fit-content;
+  display: flex;
+}
+
+.con_contactsListContainer {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  padding: 16px;
+  height: 86vh;
+  background: #ffffff;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.08);
+  overflow: scroll;
+}
+
+.con_contactList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 357px;
+  height: 100%;
+  left: 48px;
+  top: 2px;
+  background: #ffffff;
+}
+
+.con_alphabeticHints {
+  width: 282px;
+  height: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-bottom: 1px solid rgba(238, 238, 233, 0.8);
+  margin-top: 10px;
+}
+
+.con_contactListElement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 35px;
+  width: 357px;
+  height: 79px;
+  background: #ffffff;
+  border-radius: 10px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.con_contactListElement:hover {
+  background-color: hsla(212, 74%, 66%, 0.25);
+}
+
+.con_contactListElementLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  border: 1px solid white;
+  color: white;
+}
+
+.con_contactListElementEmail {
+  width: 140px;
+  height: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #007cee;
+}
+
+.con_contactInformation {
+  /* display: flex; */
+  flex-direction: column;
+  padding: 16px;
+  background-color: #f6f7f8;
+  /*width: 700px;  new added on 31.01.2023*/
+}
+
+.con_contactInformationHeader {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.con_contactInformationStartHeader {
+  width: 274px;
+  height: 73px;
+  margin-right: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 120%;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.con_vector5 {
+  width: 0px;
+  height: 59px;
+  border: 3px solid #29abe2;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.con_contactInformationStartHeaderTwo {
+  width: 235px;
+  height: 32px;
+  margin-left: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 120%;
+  color: #2a3647;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  white-space: nowrap;
+}
+
+.con_contactsDetails {
+  top: 260px;
+  left: 750px;
+  right: 0px;
+  bottom: 0px;
+  padding: 16px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.con_labelBigAndName {
+  display: flex;
+  align-items: center;
+  font-size: 47px;
+  margin-bottom: 48px;
+}
+
+.con_bigLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 3px solid #ffffff;
+  color: white;
+  margin-right: 27px;
+}
+
+.con_firstNameLastName {
+  margin-left: 27px;
+}
+
+.con_editContainer {
+  display: flex;
+}
+
+.con_contactInformationSpan {
+  font-size: 21px;
+  margin-right: 62px;
+}
+
+.con_buttonContainer {
+  position: absolute;
+  z-index: 2;
+  right: -250px;
+  bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.con_ContactInformationAddButton {
+  box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 10px;
+  /* margin: 20px; */
+  gap: 10px;
+  width: 193px;
+  height: 53px;
+  background: #2a3647;
+  border: 1px solid #2a3647;
+  border-radius: 10px;
+}
+
+.con_ContactInformationAddButtonMobile {
+  position: absolute;
+  top: 0px;
+  right: 32px;
+  box-sizing: border-box;
+  display: none;
+  align-self: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 10px;
+  /* margin: 20px; */
+  gap: 10px;
+  width: 193px;
+  height: 53px;
+  background: #2a3647;
+  border: 1px solid #2a3647;
+  border-radius: 10px;
+}
+
+.con_CloseContactInformation {
+  display: none;
+}
+
+.con_editOrNewPopup {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 83vw; /* new added on 2023-02-01*/
+  /* width: 1000px; */
+  height: 594px;
+  display: flex;
+}
+
+.con_editOverlaySideBar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 594px;
+  /* width: 453px; */ /* new on 2023-02-01*/
+  width: 32vw; /* new on 2023-02-01*/
+  background-color: #2a3647;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.joinLogoEditOverlay {
+  position: absolute;
+  top: 154px;
+  left: 45.5px;
+  width: 54px;
+  height: 67px;
+}
+
+.sideBarText {
+  align-self: center;
+  /* width: 361px; */ /* new on 2023-02-01 */
+  /* height: 73px; */ /* new on 2023-02-01 */
+
+  /* Version 2/t1 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 120%;
+  /* or 73px */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  /* width: 720px; */ /* new on 2023-02-01*/
+  width: 52vw; /* new on 2023-02-01*/
+  height: 594px;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-right: 53px;
+}
+
+.editLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; /* new on 2023-02-01 */
+  height: 120px; /* new on 2023-02-01 */
+  /*width: 8.3vw; /* new on 2023-02-01 */
+  /*height: 8.3vw; /* new on 2023-02-01 */
+
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid #ffffff;
+  margin-left: 80px;
+  color: white;
+  /* background: red; */
+}
+
+.con_editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 16px; */
+  margin-left: 84px;
+  background-color: white;
+}
+
+.imageEditCancel {
+  position: absolute;
+  top: 26px;
+  /*right: 55.38px; /* new on 2023-02-01*/
+  right: 5%;
+  /* width: 22px;
+  height: 22px;
+  object-fit: cover; */
+}
+
+.imageEditCancel:hover {
+  cursor: pointer;
+}
+
+.imageEditCancelMobile {
+  display: none;
+  position: absolute;
+  top: 26px;
+  right: 15.38px;
+}
+
+.imageEditCancelMobile:hover {
+  cursor: pointer;
+}
+
+/* settings from: https://www.figma.com/file/3qlJ22yFozngW2gdOfczMe/Join-Version-1-(Final-version)?node-id=627%3A3647&t=FV0FtFXauyDdBJwc-0 */
+
+.con_editInputField {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 220px;
+  background-size: 16px 22px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  /*width: 422px; */ /* new on 2023-02-01*/
+  width: 29vw; /* new on 2023-02-01 */
+  height: 51px;
+  margin-top: 49px;
+  /* margin-left: 48px; */
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  /* color: #D1D1D1; */
+}
+
+.con_editInputfieldName {
+  background: url("../img/name.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  padding-left: 21px;
+  background-size: 16px 22px;
+  /* color: #D1D1D1; */
+}
+
+.con_editInputfieldPhone {
+  background: url("../img/phone-30-32.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 19.5px 19.5px;
+  padding-left: 21px;
+}
+
+.con_editInputfieldMail {
+  background: url("../img/mail.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 20px 18px;
+  padding-left: 21px;
+}
+
+.saveEditButton {
+  display: flex;
+  z-index: 3;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 10px;
+  margin-top: 55px;
+  gap: 10px;
+  /*height: 61px; */ /* new on 2023-02-01 */
+
+  height: calc(61 / 1024) vh; /* new on 2023-02-01 */
+  width: 143px;
+
+  background: #2a3647;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 120%;
+  /* or 25px */
+
+  text-align: center;
+}
+
+.saveEditButton:hover {
+  cursor: pointer;
+  background: #29abe2;
+  /* stronger */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1400px) {
+  .con_contactInformationHeader {
+    display: block !important;
+    justify-content: center;
+  }
+
+  .con_labelBigAndName {
+    font-size: 32px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .con_contactInformation {
+    left: 590px !important;
+  }
+
+  .con_contactsListContainer {
+    left: 190px !important;
+  }
+
+  .con_contactInformationStartHeader {
+    font-size: 45px !important;
+  }
+
+  .con_editForm {
+    margin-left: 42px;
+  }
+
+  .editLabel {
+    position: absolute !important;
+    top: 0px !important;
+    left: 400px !important;
+    /* margin-left: 40px; */
+  }
+}
+
+@media (max-width: 1200px) {
+  .con_labelBigAndName {
+    font-size: 20px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .con_bigLabel {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .con_editContainer {
+    font-size: 16px !important;
+  }
+
+  .con_contactInformationSpan {
+    align-self: center;
+    font-size: 16px !important;
+  }
+
+  .sideBarText {
+    font-weight: 700;
+    font-size: 45px;
+  }
+
+  .imageEditCancel {
+    right: 10%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .con_buttonContainer {
+    left: 450px !important;
+  }
+
+  .con_contactInformationSpan {
+    margin-right: 24px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .con_contactsDetails {
+    margin-top: 0px !important;
+  }
+
+  .con_contactInformationHeader {
+    margin: 0px !important;
+  }
+
+  .con_contactInformationStartHeaderTwo {
+    margin-left: 0px !important;
+  }
+
+  .con_editContainer {
+    /* display: block !important; */
+    flex-direction: column;
+  }
+
+  .con_bigLabel {
+    margin-right: 0px !important;
+  }
+
+  .con_editForm {
+    margin-left: 42px;
+  }
+
+  .con_editInputField {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .imageEditCancel {
+    right: 15%;
+  }
+}
+
+@media (max-width: 930px) {
+  /* .con_contactsListContainer {
+    width: 500px!important
+  } */
+
+  .con_contactInformation {
+    position: absolute;
+    z-index: 1;
+    left: 12px !important;
+    width: 400px !important;
+    /* display: none; */
+  }
+
+  .con_editContainer {
+    /* display: flex !important; */
+    flex-direction: row !important;
+  }
+
+  .con_buttonContainer {
+    display: none;
+  }
+
+  .con_CloseContactInformation {
+    display: flex;
+  }
+
+  .con_ContactInformationAddButtonMobile {
+    display: flex !important;
+    width: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .editLabel {
+    left: 300px !important;
+  }
+
+  .imageEditCancel {
+    right: 20%;
+  }
+
+  .con_editOverlaySideBar {
+    width: 25vw !important;
+  }
+
+  .sideBarText {
+    width: 170px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .imageEditCancel {
+    right: 25%;
+  }
+
+  .editLabel {
+    left: 150px !important;
+  }
+}
+
+@media (max-width: 730px) {
+  .con_contacts {
+    /* left: 175px !important; */
+    left: 70px !important;
+  }
+
+  .con_contactsListContainer {
+    width: 70vw !important;
+  }
+
+  .con_contactList {
+    align-self: center;
+  }
+
+  .con_contactInformation {
+    /* width: 100vw !important; */
+    width: 100vw !important;
+    position: absolute;
+    z-index: 1;
+    /* left: 45px !important; */
+    left: -70px !important;
+  }
+
+  .con_buttonContainer {
+    top: 420px !important;
+    left: 170px !important;
+  }
+
+  .con_ContactInformationAddButton {
+    width: 150px !important;
+  }
+
+  .con_CloseContactInformation {
+    width: 120px;
+  }
+
+  .con_editOrNewPopup {
+    left: -120px !important;
+    width: 100vw !important;
+  }
+
+  .con_editOverlaySideBar {
+    width: 40vw !important;
+  }
+
+  .rightSide {
+    width: 60vw !important;
+  }
+
+  .con_editInputField {
+    width: 50vw !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .con_contactsListContainer {
+    width: 100vw !important;
+  }
+
+  .con_contacts {
+    left: 0px !important;
+  }
+
+  .con_contactInformation {
+    left: 0px !important;
+    height: 86vh;
+  }
+
+  .con_editOrNewPopup {
+    z-index: 2;
+    flex-direction: column;
+    top: -100px;
+    left: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+
+  .con_editOverlaySideBar {
+    width: 100vw !important;
+    height: 40vh !important;
+    /* height: 351px !important; */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .sideBarText {
+    top: 100px;
+    width: unset !important;
+  }
+
+  .nav_top_bar {
+    z-index: 1;
+  }
+
+  .rightSide {
+    width: 100vw !important;
+    height: 60vh !important;
+    /* height: 410px; */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+    padding-right: 0 !important;
+  }
+
+  .imageEditCancelMobile {
+    display:flex !important;
+  }
+
+  .con_editInputField {
+    width: 80vw !important;
+    height: 41px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .con_editInputfieldName {
+    margin-top: 49px !important;
+    margin-bottom: 35px !important;
+  }
+
+  .con_editInputfieldMail {
+    margin-bottom: 59px !important;
+  }
+
+  .con_editInputfieldPhone {
+    margin-bottom: 35px !important;
+  }
+
+  .saveEditButton {
+    margin-top: 0px !important;
+    width: 71px !important;
+    height: 51px !important;
+  }
+
+  .con_editForm {
+    margin-top: 0px !important;
+    margin-left: 27px !important;
+    margin-right: 27px !important;
+    justify-content: center;
+    padding-bottom: 10vh !important;
+  }
+
+  .joinLogoEditOverlay {
+    display: none !important;
+  }
+
+  .editLabel {
+    left: 32vw !important;
+    top: 190px !important;
+    width: 120px !important;
+    height: 120px !important;
+    font-weight: 400 !important;
+    font-size: 27px !important;
+    line-height: 120% !important;
+    margin-left: 0 !important;
+  }
+}
