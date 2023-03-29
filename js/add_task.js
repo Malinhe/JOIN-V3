@@ -3,6 +3,12 @@ let subtasks = [];
 let subtaskCheck = [];
 let loading = false;
 
+async function loadArrayFromBackend() {
+    // tasks = getArrayFromBackend('tasks');
+     await downloadFromServer();
+    tasks = await JSON.parse(backend.getItem('tasks')) || [];    
+}
+
 // Principal function made up by a set of input elements //
 
 async function addTask() {

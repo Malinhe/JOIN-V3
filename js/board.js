@@ -6,12 +6,6 @@ let dropdownClicked = false;
 let clicked_You = false;
 let clicked_Contact = false;
 
-async function loadArrayFromBackend() {
-    // tasks = getArrayFromBackend('tasks');
-     await downloadFromServer();
-    tasks = await JSON.parse(backend.getItem('tasks')) || [];    
-}
-
 function updateHTML() {
     let todo = tasks.filter(t => t['status'] == 'Todo');
 
@@ -64,7 +58,6 @@ function startDragging(id) {
 function allowDrop(ev) {
     ev.preventDefault();
 }
-
 
 /**
  * Function to move the dragged element to the selected area
