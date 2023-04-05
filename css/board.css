@@ -631,11 +631,12 @@
     .bo_todo_sections {
         padding-left: unset;
     }
-
-    /* .bo_drag-area {
-        width: 254px;
-    } */
 }
+
+@media (max-width: 730px) {
+   .bo_main{
+    padding-left: 110px;
+}}
 
 @media (max-width: 600px) {
     .bo_main {

@@ -1,4 +1,4 @@
-setURL("https://gruppe-375.developerakademie.net/backend");
+// setURL("https://gruppe-375.developerakademie.net/backend");
 
 let alphabet = [
   "A",

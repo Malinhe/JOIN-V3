@@ -119,6 +119,7 @@ function clearTask() {
     urgentButtonDefault();
     mediumButtonDefault();
     lowButtonDefault();
+    deleteTasks();
 }
 
 // Shows hover effect for clearTask() //

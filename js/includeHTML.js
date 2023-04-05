@@ -1,3 +1,6 @@
+setURL("https://malaica-brunks.net/JOIN-V3/backend");
+
+
 async function includeHTML() {
     const templatesContainer = getAllTemplatesContainer();
     if (templatesContainer.length == 0) return; // there are no templates container
